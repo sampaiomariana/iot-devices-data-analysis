@@ -156,9 +156,21 @@ Para realizar todos esses passos, foram utilizadas as bibliotecas pandas e stati
 
 \includegraphics[scale=0.7]{img 01.jpg}
 
-A fim de entender qual era o tipo de conteúdo em cada linha, foi feito um comando com uma descrição do conteúdo de cada linha.
+A fim de entender qual era o tipo de conteúdo em cada linha, foi feito um comando com uma descrição do conteúdo de cada linha. Essa análise é feita para ver se existem campos nulos nas colunas, caso existam eles devem ser tratados. Nesse caso, os tipos de conteúdo eram int64 e object e não existem campos nulos nas colunas. Visto que existiam duas colunas que representam a chave primária da linha, sendo ela, o id e a roomid/id, optei por retirar a coluna id.
 
 \includegraphics[scale=0.5]{img 02.jpg}
+Após isso, realizei uma análise focada em cada coluna a fim de verificar na coluna do roomid/id se existia algum campo diferente de roomid, no caso da coluna de noteddate, a fim de verificar a quantidade de registros em uma data e o seu percentual. Foi possível observar que na data de 12/09/20218 tiveram mais medições de temperatura, sendo ela 65 registros, o que corresponde a 0.07 percentual do total de registros.
+
+\includegraphics[scale=0.36]{img 03.jpg}
+
+O mesmo foi feito com temp, que corresponde a temperatura, nessa análise foi possível observar que houve 10203 registros com temperatura por 39 graus, que corresponde a 10.45 percentual.
+
+\includegraphics[scale=0.5]{img 05.jpg}
+
+Também para a coluna de out/in foi feito, e foi possível observar que a maioria dos registros foram feitos na parte externa do edifício, pela análise, tem-se que 79.16 percentual foi medido externamente e 20.84 percentual foi medido na parte interna do edifício.
+
+
+\includegraphics[scale=0.7]{img 06.jpg}
 
 
 \newpage
